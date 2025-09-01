@@ -1,31 +1,31 @@
 import React from "react";
-import logo from "/src/assets/blood.jpg";
-import bloodImg from "/src/assets/blood6.png"; // replace with your image path
+import logo from "/blood.jpg";
+import bloodImg from "/blood6.png"; // replace with your image path
 
 export default function Frontend() {
   const steps = [
     {
       id: 1,
       title: "Registration",
-      img: "/src/assets/blood3.jpg",
+      img: "/blood3.jpg",
       desc: "Sign up as a donor and fill in your personal details along with your blood group. This helps us match you with patients in need quickly and accurately.",
     },
     {
       id: 2,
       title: "Seeing",
-      img: "/src/assets/blood2.jpg",
+      img: "/blood2.jpg",
       desc: "A short health check is done before donation to ensure you are fit. This step protects both the donor and the recipient, making the process safe.",
     },
     {
       id: 3,
       title: "Donation",
-      img: "/src/assets/blood5.jpg",
+      img: "/blood5.jpg",
       desc: "The actual blood donation takes only 10–15 minutes. It’s a simple, safe, and painless process guided by medical professionals.",
     },
     {
       id: 4,
       title: "Save Life",
-      img: "/src/assets/blood4.jpg",
+      img: "/blood4.jpg",
       desc: "Your donated blood is used to help patients in emergencies, surgeries, or treatments. Every unit of blood can save up to three lives — your gift truly matters.",
     },
   ];
