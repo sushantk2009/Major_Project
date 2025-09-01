@@ -1,0 +1,666 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.logo h1 {
+  color: #e60000;
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav-buttons button {
+  background: #e60000;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-buttons button:hover {
+  background: #cc0000;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.heading h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.heading p {
+  color: #444;
+  font-size: 14px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 40px 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+
+/* Header css  */
+.header {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Adjust height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background image */
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%); /* darkens image a bit */
+}
+
+/* Overlay for extra black effect */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+}
+
+/* Text content */
+.header-content {
+  position: absolute;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  animation: fadeInUp 1.5s ease;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* contact css  */
+.contact-section {
+  padding: 50px;
+  background: #fdfdfd;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.contact-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #e60000;
+  position: relative;
+}
+
+.contact-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #e60000;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Layout */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left Info Section */
+.contact-info {
+  flex: 1;
+  background: #fff5f5;
+  border: 1px solid #ffcccc;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-left: 10%;
+
+}
+
+.contact-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #b30000;
+}
+
+.contact-info p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+  margin-left: 5%;
+}
+
+/* Right Image Section */
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  max-width: 320px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.contact-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .contact-image {
+    margin-top: 20px;
+  }
+}
+
+/* footer  */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #ffe6e6;
+  margin-bottom: 25px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 15px;
+  font-size: 13px;
+  color: #f2f2f2;
+}
+
+/* Donate css  */
+/* Layout */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-btn {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.side-btn:hover {
+  background: #ffeded;
+  color: #d9534f;
+}
+
+.side-btn.active {
+  background: #d9534f;
+  color: white;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #d9534f;
+}
+
+/* Form Styling */
+.profile-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 20px;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.form-actions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #ccc;
+  color: black;
+}
+
+.save-btn {
+  background: #d9534f;
+  color: white;
+}
+
+/* donate history css */
+.history-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.history-title {
+  text-align: center;
+  color: #b71c1c;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.no-data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.history-table thead {
+  background: #d32f2f;
+  color: white;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.history-table tr:hover {
+  background-color: #f5f5f5;
+  transition: 0.2s;
+}
+
+.history-table th {
+  background-color: #b30000;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* request css  */
+.request-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.request-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #d32f2f;
+  margin-bottom: 20px;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.request-form textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+.request-form button {
+  padding: 14px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.request-form button:hover {
+  background: #b71c1c;
+}
+
+/* Reuse donate history CSS */
+.history-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.history-title {
+  text-align: center;
+  color: #b71c1c;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.no-data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.history-table thead {
+  background: #c62828;
+  color: white;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.history-table tr:hover {
+  background: #fbe9e7;
+  transition: 0.2s;
+  
+}
+/* camp css  */
+.camp-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.camp-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #b71c1c;
+  margin-bottom: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.search-input, .blood-filter {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-input:focus, .blood-filter:focus {
+  outline: none;
+  border-color: #b71c1c;
+  box-shadow: 0 0 6px rgba(183, 28, 28, 0.3);
+}
+
+.no-data {
+  text-align: center;
+  font-size: 1.1rem;
+  color: gray;
+}
+
+/* Donor Cards Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Donor Card */
+.donor-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.donor-card:hover {
+  transform: translateY(-6px);
+}
+
+.blood-group {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #d32f2f;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.donor-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* Request Button */
+.request-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.request-btn:hover {
+  background: #b71c1c;
+}
